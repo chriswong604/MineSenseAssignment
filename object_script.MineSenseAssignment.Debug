@@ -1,0 +1,15 @@
+INPUT(
+./debug\customseriesdata.o
+./debug\customtablemodel.o
+./debug\data.o
+./debug\filereader.o
+./debug\filewritter.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\tablegraph.o
+./debug\testdata.o
+./debug\moc_customtablemodel.o
+./debug\moc_mainwindow.o
+./debug\moc_tablegraph.o
+./debug\moc_testdata.o
+);

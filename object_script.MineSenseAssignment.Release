@@ -1,0 +1,15 @@
+INPUT(
+./release\customseriesdata.o
+./release\customtablemodel.o
+./release\data.o
+./release\filereader.o
+./release\filewritter.o
+./release\main.o
+./release\mainwindow.o
+./release\tablegraph.o
+./release\testdata.o
+./release\moc_customtablemodel.o
+./release\moc_mainwindow.o
+./release\moc_tablegraph.o
+./release\moc_testdata.o
+);
