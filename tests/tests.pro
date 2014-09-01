@@ -14,17 +14,18 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += tst_testdata.cpp \
+SOURCES += \
     tst_testtablemodel.cpp \
     main.cpp \
+    tst_testseriesdata.cpp
 
 
 
 DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
 HEADERS += \
-    tst_testdata.h \
     tst_testtablemodel.h \
+    tst_testseriesdata.h
 
 
 

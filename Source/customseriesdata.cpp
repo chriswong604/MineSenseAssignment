@@ -32,11 +32,13 @@ size_t CustomSeriesData::size() const
  */
 QPointF CustomSeriesData::sample(size_t index) const
 {
+    if(index < size()){
+        QModelIndex i = model->index(index, 0, QModelIndex()); //get X Data
+        QModelIndex i2 = model->index(index, 1, QModelIndex()); //get Y Data
 
-    QModelIndex i = model->index(index, 0, QModelIndex()); //get X Data
-    QModelIndex i2 = model->index(index, 1, QModelIndex()); //get Y Data
-
-    return QPointF(model->data(i, Qt::DisplayRole).toDouble(), model->data(i2, Qt::DisplayRole).toDouble());
+        return QPointF(model->data(i, Qt::DisplayRole).toDouble(), model->data(i2, Qt::DisplayRole).toDouble());
+    }
+    return QPointF();
 }
 
 /**

@@ -14,7 +14,6 @@ public:
     TestTableModel();
 
 private Q_SLOTS:
-    void initTestCase();
     void testRowCount();
     void testGetDataValidInput();
     void testGetDataIndexOutOfBounds();
